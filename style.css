@@ -1,0 +1,53 @@
+body{
+    background-color:black;
+}
+.grow{
+    margin-top:40%;
+    height:100px;
+    width:auto;
+}
+.confeti{
+    width:60vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image:url(https://thumbs.gfycat.com/EmbellishedTatteredLadybug-max-1mb.gif)
+}
+.kitty{
+    animation: rotation 10s;
+    margin-top:-200px;
+    height:1000px;
+    width:auto;
+}
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(1080deg);
+    }
+}
+.hidden{
+    display:none;
+}
+.bigger{
+    margin-top:40%;
+    height:100px;
+    width:auto;
+    transition: all 5.0s ease-in-out; 
+    transform: scale(15);
+}
+
+.container{
+    height:80vh;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+
+}
+header{
+    display:flex;
+    justify-content: center;
+    font-size: 60px;
+    color:goldenrod;
+}

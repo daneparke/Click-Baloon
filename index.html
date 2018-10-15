@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <header class='row'>Click on Balloon</header>
+    <div class='container'>
+        <img class='grow' src='single-purple-balloon-png-clipart-image-5a3b52d12409e0.5756919915138372651476.png'
+            alt='Purple Balloon'>
+        <div class='hidden confeti'>
+            <img class='kitty' src='kitty.png' alt='Hello Kitty'>
+
+        </div>
+        <!-- <img class='hidden confeti' src='https://thumbs.gfycat.com/EmbellishedTatteredLadybug-max-1mb.gif'
+            alt='Confetti!!!!!!!!'> -->
+        <!-- <img class='hidden kitty' src='hellokitty.png' alt='Hello Kitty'> -->
+
+    </div>
+    <!-- <audio autoplay id='mySoundClip'>
+        <source src="balloon-sound.wav">
+    </audio> -->
+    <script>
+        var balloon = document.querySelector('.grow')
+        balloon.addEventListener('click', play)
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+            balloon.setAttribute('class', 'bigger')
+            setTimeout(function () {
+                balloon.style.display = 'none'
+                // var confeti = querySelector('.confeti')
+                // var kitty = querySelector('.kitty')
+                var show = document.querySelector('.hidden')
+                show.classList.remove('hidden')
+                var header = document.querySelector('header')
+                header.innerHTML = 'You Are Welcome'
+
+            }, 5200)
+
+        }
+
+    </script>
+
+    <!-- <input type="button" value="PLAY" onmouseover="play()"> -->
+    <audio id="audio" src="balloon-sound.wav"></audio>
+
+
+
+
+
+
+    <!-- <img src='hellokitty.png' alt='Hello Kitty'> -->
+    <!-- <img src='https://thumbs.gfycat.com/EmbellishedTatteredLadybug-max-1mb.gif'
+        alt='Confetti!!!!!!!!'> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</body>
+
+</html>
